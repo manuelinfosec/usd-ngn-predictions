@@ -1,0 +1,147 @@
+p span.results {
+    background-color: rgb(0, 251, 0);
+}
+
+p span.error {
+    background-color: red;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    /*background-color: #F0F8FF;*/
+}
+
+.form {
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 50px;
+    box-shadow: 10px 10px 15px lightblue;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.form form {
+    display: block;
+}
+
+.form label {
+    text-align: center;
+    margin-left: 80px;
+    position: relative;
+
+}
+
+.form select {
+    position: relative;
+}
+
+.label-head {
+    position: relative;
+    left: 50%;
+    text-align: right;
+    font-size: 16px;
+}
+
+.form-start {
+    margin-top: 70px;
+
+}
+
+.form-head {
+    margin-left: 40px;
+    padding-left: 40px;
+    position: relative;
+    top: -50px;
+    font-size: 24px;
+    color: gray;
+
+}
+
+
+.select-model {
+    position: relative;
+    top: 30px;
+}
+
+.select-model:hover:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-left: 2px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 2px solid gray;
+    margin-top: -3px;
+}
+
+.select-model select:hover {
+    background-color: #13274F;
+}
+
+.select-model select {
+    margin-left: 80px;
+    position: relative;
+    left: 260px;
+    top: -16px;
+    margin-bottom: 20px;
+    padding-top: 0;
+    width: 180px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    background-color: gray;
+
+}
+
+.select-model-token {
+    margin-left: 80px;
+    position: relative;
+    left: 53%;
+    bottom: 20px;
+
+}
+
+.form-start input {
+    margin-top: -20px;
+    position: relative;
+    top: -10px;
+    left: 175px;
+    height: 30px;
+    text-align: center;
+    border-style: solid;
+    border-radius: 4px;
+    color: black;
+}
+
+.form-start .submit {
+    position: relative;
+    left: 180px;
+    top: 40px;
+    width: 160px;
+    border-style: none;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.form-start .submit:hover {
+    background-color: #13274F;
+    color: white;
+}
+
+.bottom {
+    color: black;
+    font-size: 18px;
+    margin-top: 50px;
+    font-family: Tahoma, sans-serif;
+    font-weight: 3x00;
+}

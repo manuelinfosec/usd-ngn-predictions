@@ -1,0 +1,50 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/style.css'%}">
+        <title>Dollar to Naira Prediction Portal</title>
+    </head>
+
+    <body>
+        <div class="form">
+            <form action="" method="post">
+                <label for="models" class="label-head"> Select model for prediction: </label><br />
+                <div class="select-model">
+                    {% csrf_token %}
+                    <select id="models" name="model" class="select-model">
+                        {% for model in models %}
+                        <option value="{{ model.0 }}">{{model.1}}</option>
+                        {% endfor %}
+                    </select>
+                    <br>
+                </div>
+
+                <div class="form-start">
+                    <label for="data" class="form-head">Input the value to predict for:</label><br>
+                    {% if input %}
+                        <input type="text" name="data" value="{{input}}" required class="text-data" />
+                    {% else %}
+                        <input type="text" name="data" required class="text-data" />
+                    {% endif %}
+                    <br>
+                    <input type="submit" value="Submit" class="submit" />
+                </div>
+            </form>
+            <br>
+            <div class="bottom">
+                {% if pred %}
+                    <p> Prediction Results: <span class="results"> &#x20a6;{{ pred }} </span></p>
+                {% endif %}
+            </div>
+            <div class="bottom">
+                {% if error %}
+                    <p> Error: <span class="error"> {{ error }} </span></p>
+                {% endif %}
+            </div>
+
+        </div>
+    </body>
+
+</html>

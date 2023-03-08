@@ -1,0 +1,9 @@
+numpy
+keras
+pandas
+django==3.2.15
+sklearn
+matplotlib
+keras
+seaborn
+pickle
