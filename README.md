@@ -3,6 +3,15 @@
 ## Project Objectives
 This project aims to predict the exchange rate between the US Dollar and the Nigerian Naira. Three different machine learning models were built to predict the exchange rate: linear regression, Support Vector Machine (SVM), and Artificial Neural Network (ANN). The models were trained and evaluated using historical exchange rate data from 2001 to 2022.
 
+## Project Structure
+- `assets/` - Holds plot images obtained during the study.
+- `datasets/` - Holds the dataset used in the study.
+- `production/` - Holds Django files that enables prediction in a live environment
+- `production/artifcats/` - Holds contents of the compiled model.
+- `production/templates` - Holds html files used in the web environment.
+- `production/static` - Holds CSS files used in the web environment.
+- `production/RequestHandler` - Holds files that interface with the prediction functions.
+
 ## Generating model artifacts
 To run the notebook, you need to have Visual Studio Code or Jupyter Notebook installed on your computer. On Visual Studio Code, use the `Jupyter` extension from Marketplace to power up a kernel.
 
